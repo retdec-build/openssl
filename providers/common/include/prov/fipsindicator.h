@@ -22,11 +22,11 @@
 # define OSSL_FIPS_IND_SETTABLE0 0
 # define OSSL_FIPS_IND_SETTABLE1 1
 # define OSSL_FIPS_IND_SETTABLE2 2
-# define OSSL_FIPS_IND_SETTABLE3 2
-# define OSSL_FIPS_IND_SETTABLE4 2
-# define OSSL_FIPS_IND_SETTABLE5 2
-# define OSSL_FIPS_IND_SETTABLE6 2
-# define OSSL_FIPS_IND_SETTABLE7 2
+# define OSSL_FIPS_IND_SETTABLE3 3
+# define OSSL_FIPS_IND_SETTABLE4 4
+# define OSSL_FIPS_IND_SETTABLE5 5
+# define OSSL_FIPS_IND_SETTABLE6 6
+# define OSSL_FIPS_IND_SETTABLE7 7
 # define OSSL_FIPS_IND_SETTABLE_MAX (1 + OSSL_FIPS_IND_SETTABLE7)
 
 /* Each settable is in one of 3 states */
@@ -48,7 +48,7 @@
  * To override strict mode we either need to have a settable variable or have a
  * fips config flag that overrides strict mode.
  * If there are multiple checks, each one could possible have a different
- * configurable item. Each configurable item can be overriden by a different
+ * configurable item. Each configurable item can be overridden by a different
  * settable.
  */
 typedef struct ossl_fips_ind_st {
